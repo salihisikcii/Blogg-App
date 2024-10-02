@@ -1,0 +1,44 @@
+@model RegisterViewvModel
+<div class="row">
+    <div class="col-12">
+        <div class="bg-white p-4">
+            <h1>Kayıt Ol</h1>
+        <form action="Register" method="post" novalidate>
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+             <div class="mb-3">
+                <label asp-for="UserName" class="form-label"></label>
+                <input asp-for="UserName" class="form-control">
+                <span asp-validation-for="UserName" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Name" class="form-label"></label>
+                <input asp-for="Name" class="form-control">
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Email" class="form-label"></label>
+                <input asp-for="Email" class="form-control">
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Password" class="form-label"></label>
+                <input asp-for="Password" class="form-control">
+                <span asp-validation-for="Password" class="text-danger"></span>
+
+            </div>
+            <div class="mb-3">
+                <label asp-for="Password2" class="form-label"></label>
+                <input asp-for="Password2" class="form-control">
+                <span asp-validation-for="Password2" class="text-danger"></span>
+
+            </div>
+            <div class="form-button">
+            <button type="submit" class="btn btn-primary">Kayıt Ol</button>
+            <a href="/users/login" class="btn btn-primary"> Giriş Yap</a>
+            </div>
+                
+
+        </form>
+        </div>
+    </div>
+</div>

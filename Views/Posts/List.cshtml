@@ -1,0 +1,36 @@
+@model List<Post>
+
+
+<div style="background-color: white;" class="row">
+<div class="col-12">
+    <h2>Post Listesi</h2>
+    <a href="/posts/create" class="btn btn-primary">Yeni Post</a>
+    <table class="table tabled-bordered">
+        <thead>
+            <tr></tr>
+                <th style="width: 200px">Resim</th>
+                <th>Başlık</th>
+                <th>Aktif</th>
+                <th style="width: 125px;"></th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var item in Model)
+            {
+                <tr>
+                    <td>
+                        <img src="/img/@item.Image" style="width: 200px" class="ing-fluid" alt="">
+                    </td>
+                    <td>@item.Title</td>
+                    <td>@item.IsActive</td>
+                    <td>
+                        <a href="/posts/edit/@item.PostId" class="btn btn-sm btn-primary">Edit</a>
+                        <a href="" class="btn btn-sm btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+</div>
