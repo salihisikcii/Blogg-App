@@ -7,6 +7,9 @@ Kullanıcılar yorum bırakabilir ve yazar profillerini görüntüleyebilirler.
 Kullanılan Teknolojiler:
 
 Backend: ASP.NET Core MVC
+
 Veritabanı: MySQL
+
 Frontend: Html,css,js,bootstrap 
+
 Kimlik Doğrulama: ASP.NET Core Identity
