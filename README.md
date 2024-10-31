@@ -10,6 +10,6 @@ Backend: ASP.NET Core MVC
 
 Veritabanı: MySQL
 
-Frontend: Html,css,js,bootstrap 
+Frontend: Html,css,js,tailwind 
 
 Kimlik Doğrulama: ASP.NET Core Identity
